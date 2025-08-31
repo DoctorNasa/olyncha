@@ -1,26 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors - Updated for modern aesthetic */
+  --color-matcha-900: #1a3d2a;
+  --color-matcha-700: #2d5016;
+  --color-matcha-600: #4a7c59;
+  --color-matcha-500: #6b9b3a;
+  --color-matcha-400: #8bc34a;
+  --color-matcha-300: #a8d5a8;
+  --color-sage: #c5d9b7;
+  --color-pistachio: #d4e4c5;
+  --color-cream: #faf8f3;
+  --color-beige: #f5f2e8;
+  --color-ink: #0a0a0a;
+  --color-gray: #6b6b6b;
+  
+  /* Default theme */
+  --background: #faf8f3;
+  --foreground: #0a0a0a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-matcha-900: #0E4F33;
+  --color-matcha-600: #3C8F52;
+  --color-cream: #F3EDE4;
+  --color-ink: #111111;
+  --color-brand-red: #C8102E;
+  --font-serif: 'Cormorant', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: 'Jost', 'Inter', system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* Modern typography scale */
+.text-hero {
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+}
+
+.text-display {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.text-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Custom utility classes */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Float animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Font classes */
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-jost {
+  font-family: 'Jost', sans-serif;
+}
+
+/* Custom matcha colors */
+.bg-matcha-light {
+  background-color: #F0F5F1;
+}
+
+.bg-matcha-green {
+  background-color: #3D643B;
+}
+
+.text-matcha-green {
+  color: #3D643B;
+}
+
+.border-matcha-green {
+  border-color: #3D643B;
 }

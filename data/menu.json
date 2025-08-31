@@ -1,0 +1,151 @@
+{
+  "sections": [
+    {
+      "id": "signatures",
+      "title": "Signature Drinks",
+      "description": "Our premium ceremonial matcha creations",
+      "items": [
+        {
+          "id": "midori-kaze",
+          "name": "緑風 Midori-kaze",
+          "english": "Green Breeze",
+          "desc": "Ceremonial matcha, not-as-bitter. Smooth & aromatic.",
+          "prices": {"12": 4.80, "16": 5.60, "20": 6.30},
+          "tags": ["iced", "ceremonial", "signature"],
+          "img": "/drinks/midori-kaze.jpg",
+          "featured": true
+        },
+        {
+          "id": "strawberry-matcha",
+          "name": "Strawberry Matcha Latte",
+          "english": "Strawberry Matcha Latte",
+          "desc": "Creamy latte with fresh strawberry notes and house-made syrup.",
+          "prices": {"16": 5.30, "20": 5.95},
+          "tags": ["seasonal", "sweet", "popular"],
+          "img": "/drinks/strawberry-matcha.jpg",
+          "featured": true
+        },
+        {
+          "id": "coconut-matcha",
+          "name": "Coconut Matcha Latte",
+          "english": "Coconut Matcha Latte",
+          "desc": "Ceremonial matcha, coconut milk, optional espresso shot.",
+          "prices": {"16": 5.50, "20": 6.20},
+          "tags": ["dairy-free", "creamy"],
+          "img": "/drinks/coconut-matcha.jpg"
+        },
+        {
+          "id": "honey-yuzu",
+          "name": "Honey Yuzu Matcha",
+          "english": "Honey Yuzu Matcha",
+          "desc": "Bright citrus notes with natural honey sweetness.",
+          "prices": {"16": 5.80, "20": 6.50},
+          "tags": ["refreshing", "citrus"],
+          "img": "/drinks/honey-yuzu.jpg"
+        }
+      ]
+    },
+    {
+      "id": "seasonal",
+      "title": "Seasonal Specials",
+      "description": "Limited-time offerings celebrating the seasons",
+      "items": [
+        {
+          "id": "sakura-bloom",
+          "name": "Sakura Bloom Latte",
+          "english": "Cherry Blossom Latte",
+          "desc": "Delicate cherry blossom infused matcha with vanilla notes.",
+          "prices": {"16": 6.20, "20": 6.90},
+          "tags": ["limited", "floral", "spring"],
+          "img": "/drinks/sakura-bloom.jpg"
+        },
+        {
+          "id": "autumn-spice",
+          "name": "Autumn Spice Matcha",
+          "english": "Autumn Spice Matcha",
+          "desc": "Warming spices with maple and ceremonial matcha.",
+          "prices": {"16": 5.90, "20": 6.60},
+          "tags": ["seasonal", "warm", "spiced"],
+          "img": "/drinks/autumn-spice.jpg"
+        }
+      ]
+    },
+    {
+      "id": "classics",
+      "title": "Classic Selection",
+      "description": "Traditional matcha preparations",
+      "items": [
+        {
+          "id": "matcha-latte",
+          "name": "Classic Matcha Latte",
+          "english": "Matcha Latte",
+          "desc": "Pure ceremonial matcha with your choice of milk.",
+          "prices": {"12": 4.60, "16": 5.20, "20": 5.90},
+          "tags": ["hot", "iced", "classic"],
+          "img": "/drinks/matcha-latte.jpg"
+        },
+        {
+          "id": "iced-matcha",
+          "name": "Iced Matcha",
+          "english": "Iced Matcha",
+          "desc": "Pure matcha over ice, refreshingly simple.",
+          "prices": {"16": 4.20, "20": 4.80},
+          "tags": ["iced", "pure"],
+          "img": "/drinks/iced-matcha.jpg"
+        },
+        {
+          "id": "matcha-americano",
+          "name": "Matcha Americano",
+          "english": "Matcha Americano",
+          "desc": "Ceremonial matcha with hot water, smooth and pure.",
+          "prices": {"12": 3.80, "16": 4.40, "20": 5.00},
+          "tags": ["hot", "pure", "traditional"],
+          "img": "/drinks/matcha-americano.jpg"
+        },
+        {
+          "id": "vanilla-matcha",
+          "name": "Vanilla Bean Matcha",
+          "english": "Vanilla Bean Matcha",
+          "desc": "Classic matcha elevated with real vanilla bean.",
+          "prices": {"16": 5.40, "20": 6.10},
+          "tags": ["sweet", "creamy"],
+          "img": "/drinks/vanilla-matcha.jpg"
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "title": "Add-Ons & Extras",
+      "description": "Customize your drink",
+      "items": [
+        {
+          "id": "extra-shot",
+          "name": "Extra Matcha Shot",
+          "english": "Extra Matcha Shot",
+          "desc": "Double the matcha intensity",
+          "prices": {"add": 1.50},
+          "tags": ["addon"],
+          "img": null
+        },
+        {
+          "id": "oat-milk",
+          "name": "Oat Milk Substitute",
+          "english": "Oat Milk",
+          "desc": "Creamy oat milk alternative",
+          "prices": {"add": 0.70},
+          "tags": ["addon", "dairy-free"],
+          "img": null
+        },
+        {
+          "id": "coconut-milk",
+          "name": "Coconut Milk Substitute",
+          "english": "Coconut Milk",
+          "desc": "Rich coconut milk alternative",
+          "prices": {"add": 0.70},
+          "tags": ["addon", "dairy-free"],
+          "img": null
+        }
+      ]
+    }
+  ]
+}

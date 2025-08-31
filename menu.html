@@ -1,0 +1,571 @@
+<html>
+    <head>
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com/"
+            crossorigin=""
+        />
+        <link
+            rel="stylesheet"
+            as="style"
+            onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+        />
+
+        <title>Stitch Design</title>
+        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    </head>
+    <body>
+        <div
+            class="relative flex size-full min-h-screen flex-col bg-[#f9fcf8] group/design-root overflow-x-hidden"
+            style="font-family: Epilogue, &quot;Noto Sans&quot;, sans-serif"
+        >
+            <div class="layout-container flex h-full grow flex-col">
+                <header
+                    class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#ebf3e7] px-10 py-3"
+                >
+                    <div class="flex items-center gap-8">
+                        <div class="flex items-center gap-4 text-[#121b0e]">
+                            <div class="size-4">
+                                <svg
+                                    viewBox="0 0 48 48"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_6_535)">
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z"
+                                            fill="currentColor"
+                                        ></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6_535">
+                                            <rect
+                                                width="48"
+                                                height="48"
+                                                fill="white"
+                                            ></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h2
+                                class="text-[#121b0e] text-lg font-bold leading-tight tracking-[-0.015em]"
+                            >
+                                Matcha Cafe
+                            </h2>
+                        </div>
+                        <div class="flex items-center gap-9">
+                            <a
+                                class="text-[#121b0e] text-sm font-medium leading-normal"
+                                href="#"
+                                >Menu</a
+                            >
+                            <a
+                                class="text-[#121b0e] text-sm font-medium leading-normal"
+                                href="#"
+                                >Catering</a
+                            >
+                            <a
+                                class="text-[#121b0e] text-sm font-medium leading-normal"
+                                href="#"
+                                >About</a
+                            >
+                            <a
+                                class="text-[#121b0e] text-sm font-medium leading-normal"
+                                href="#"
+                                >Contact</a
+                            >
+                        </div>
+                    </div>
+                    <div class="flex flex-1 justify-end gap-8">
+                        <label class="flex flex-col min-w-40 !h-10 max-w-64">
+                            <div
+                                class="flex w-full flex-1 items-stretch rounded-xl h-full"
+                            >
+                                <div
+                                    class="text-[#67974e] flex border-none bg-[#ebf3e7] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                                    data-icon="MagnifyingGlass"
+                                    data-size="24px"
+                                    data-weight="regular"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24px"
+                                        height="24px"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                    >
+                                        <path
+                                            d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                                <input
+                                    placeholder="Search"
+                                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#121b0e] focus:outline-0 focus:ring-0 border-none bg-[#ebf3e7] focus:border-none h-full placeholder:text-[#67974e] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                                    value=""
+                                />
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#ebf3e7] text-[#121b0e] text-sm font-bold leading-normal tracking-[0.015em]"
+                            >
+                                <span class="truncate">Order Online</span>
+                            </button>
+                            <button
+                                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#ebf3e7] text-[#121b0e] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
+                            >
+                                <div
+                                    class="text-[#121b0e]"
+                                    data-icon="ShoppingCart"
+                                    data-size="20px"
+                                    data-weight="regular"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="20px"
+                                        height="20px"
+                                        fill="currentColor"
+                                        viewBox="0 0 256 256"
+                                    >
+                                        <path
+                                            d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"
+                                        ></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+                <div class="px-40 flex flex-1 justify-center py-5">
+                    <div
+                        class="layout-content-container flex flex-col max-w-[960px] flex-1"
+                    >
+                        <div class="flex flex-wrap justify-between gap-3 p-4">
+                            <p
+                                class="text-[#121b0e] tracking-light text-[32px] font-bold leading-tight min-w-72"
+                            >
+                                Menu
+                            </p>
+                        </div>
+                        <div class="flex gap-3 p-3 flex-wrap pr-4">
+                            <div
+                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#ebf3e7] pl-4 pr-4"
+                            >
+                                <p
+                                    class="text-[#121b0e] text-sm font-medium leading-normal"
+                                >
+                                    All
+                                </p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#ebf3e7] pl-4 pr-4"
+                            >
+                                <p
+                                    class="text-[#121b0e] text-sm font-medium leading-normal"
+                                >
+                                    Drinks
+                                </p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#ebf3e7] pl-4 pr-4"
+                            >
+                                <p
+                                    class="text-[#121b0e] text-sm font-medium leading-normal"
+                                >
+                                    Food
+                                </p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#ebf3e7] pl-4 pr-4"
+                            >
+                                <p
+                                    class="text-[#121b0e] text-sm font-medium leading-normal"
+                                >
+                                    Sweets
+                                </p>
+                            </div>
+                            <div
+                                class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-[#ebf3e7] pl-4 pr-4"
+                            >
+                                <p
+                                    class="text-[#121b0e] text-sm font-medium leading-normal"
+                                >
+                                    Merchandise
+                                </p>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-[#121b0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                        >
+                            Drinks
+                        </h2>
+                        <div
+                            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+                        >
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuB3EfZo1Agk-_PVeDmkBxKj6sGvbAy8VJDcVxYIAP-lAuiuPFaSy1zeP3h65-8HoT2Os42iciV4r8qqZ1jmUDEl270_S_y5oTK-5WVtc0bHC-9Wumgri3UH0oWTT7C37C8Hy4el6A45rQ6b6sBBgoUtZ0_A9NJLgsMr5G-wXQwrI7adN1u4CHkICBydezG3LSmmHwYM51PhzDnbtyuVLmQ-HmNrvFfvH-dp6hcuAF09vA7eWB9KlwgsD4TrCQWlZPck0rxRqjqKGyg&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Latte
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Creamy matcha latte with a hint of
+                                        sweetness.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAvpwNfFhopS8lzHKTjbKByUKZ4MgIorhQxAn2BX8PLgBoFCvTe8t3v8YY_uJ1t3GuLqNLXvVNZT5Mnm2Z-XQI6ObLzEUUPPyJ7uAr4OkxyyUwuajGzLVon6upNfVJ1LoXV3SNQqYsKQ01Tn9krG6uB6YyjxK09okiFDnwjoUXblw1puNK7Ktg0eLtrMo7RqEJTzCuIxwnIgDH1sNii2Du9ZyYplaNBNuQkDWRVmZ8q6TkigKm3J_qVKepF6fZA8yW6oeFK9JU9RJI&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Iced Tea
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Refreshing iced tea infused with matcha.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBf0gFmOlJsQ397ndEzhKbtEhn0ZmYnioSGcnsHnPmGLhhqPpJOApCmT9hBDfVuOugtve3x5aydGsTI3-NLXqV3JDnvi_Dg7so8nzuTDYHth6_aR3mO8AOONQflKKJaOtrcpIbHiaMjtLRuYoOssmkV-CZcP39De8RPcX2zmi-emHYb0ZKp_gngED8ha8fdWM-Rd4FAfd5nP1LQuvK-PiuipWKpOOgaCJRaR6mBnSZSHATGqzqPW7zW83LhxNJEokyaGEVIAgdQgD4&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Smoothie
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Smooth and creamy smoothie with a matcha
+                                        base.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBgJzO5vm4ZOWTQ6u6WbLReqfz7JuTk4p0uGeIsO6zLvP01B7gCqGqi7_E1ZdYKwvFS1t1w2PYNErT7FhrUY3E0D3cxR8GV_2kVTA6Scmn6ZlR-b89gSZOcivhaO0CcC9jdYKMBjNZ-vLWcOrRwr3mb3p90wZUmpMD0k4RrxHStrJqSnUGuGTYFwTR3KoWafU0GMFHQ-F_0AMmTunSoisYHdXkHUSb6Vc2UN_kxALjkhlh4iVOf3ghit-5ZQp-2e736J4kuct5oQkg&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Frappe
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Blended matcha frappe topped with
+                                        whipped cream.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-[#121b0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                        >
+                            Food
+                        </h2>
+                        <div
+                            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+                        >
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAF9DGV8JrWaJkQoGYNLg5QXxVY3CPeoY8kLn-Ywdan-yzlMr8WZTSiXHoJiMKJ9MuQXRDMqVqnNLEEyxQOAUYG1gV0qrkDWkw8BipM_23U7ssPILZGsBl7mFD_NXkc7M7kenkbMnfjBlSIkixnVC0QFGVQRs1ILfD1DpB5hKFg-DBtCKAmKhgC3-qrWkCyHYjjqx-8GrE8MSsVTZLdFLecfG-RU5JnyJtYALWsocE_zrfG-rW-ORbbajEKcsyvL6w5RmdteFrp2w8&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Pancakes
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Fluffy pancakes infused with matcha.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuB8Zcy8m6I3WyfyG696gb2YbEnyeMyJNUpJJAtFD-E3TXS7KYWwQnXMFchEh1jSmuVjfncuqELpNSDjanXL6uUC5TQzhG3IoHOF7MuArm5N6yNsrCQ28SHNFnXeCworVACubnlg04kcXi2NBRdqyqof-qc6LOv0u-ijMguZKt17G2KMGWueZok_1jnw0F_TpWF6BG91eq3jx0DGVWQE-yWR_No4Ukf_4s1D6WnPpkp4K9AOD9JIMTdWZdTKGisQeaKxeKN_NdsHIPw&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Waffles
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Crispy waffles with a matcha twist.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDNTaw0qiAZpsswZ3KrVvY96uVMknsg4EU-eHILByHobElM41nFdcjs0tStKw0pg6M4JXxPNl8u5s_uUWn9_YIfbfXNC8ARtuEBgasmoYMCSMhxUFf8DKeG6roxhPp9XbuqbeRXdt9JsGQKXkcrCNWm65AZjzNPOtnesge0e4eaRA5zuWd-x25AarDDYlkQ9ZLPi9H01RI0wCNRFO9-ur9oIjdClUbcAvBJrSStvC0Ct8zESlz1h7nXaTR0NTh1TSf_IJRA2TNIwxE&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Croissant
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Buttery croissant filled with matcha
+                                        cream.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCbpnKxf8U4IkZToazv3h1Z4b1jwDnX4biag2DELVyEPkcqof0_Y3Gw_miAx52gFrf6bVJzS3sWiAvTBjFYFkAeycE11M22qCTjcwrR1fTeZLcPQd37E8Zt0XTAW45r1UjSYoBQUTlUtk6WT039hRGU7Vo5C_iBzihDoTBu0uH5o8U3Yj9HuUSMjBANgWE4h3E5C4uPRDKJVZxumoOPv5gvIR6eqA4OQUSdGkq0TGGCoaMFNRKXKsgaXTUr6ty-tJCDSSU6BWvv9mE&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Muffin
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Soft muffin with a matcha swirl.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-[#121b0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                        >
+                            Sweets
+                        </h2>
+                        <div
+                            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+                        >
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDYnfWTiBZ9PThfKTOM7NdkDH9MvcmikGsnHNZ3pytWijef1r5VWlh2gEPcpt1izgsykEEb-_53KunC3PX-8GYJ_E_14BOf-GQxc-W2wvlUe5N0qfl5lFVQNjcJPBoK3Qac5iaEkv_dAL76CmwLfdvlraSbHACSoK8yhPba24ScA-ILbwRySTnWAFIFhz5CT_MRY2My5-9D559iyltwGRU3oCuAKcjHmCrKd8E04ulbV0shk49p7UEIcoUURVipGCI4vXyndLO_5e0&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Ice Cream
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Creamy ice cream with a distinct matcha
+                                        flavor.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCG92_3xI0PLN93-AsQWnw4_JSTknwCMZ5ueDKIjrdZjvk6jJtgefoIRQ_RmmMHYbw5XYCZU59Uqh3cQwoS0Kon7F-3WGw9IsJY4y4CGVOHdAx45stamXnMrk_Bo38dFci2FX95n8f_3u6-TF0rRN6Lkiywu1XNcMx7v3nD7UMUAz9yT5MWGm7K0iUffSGq-WvFGHfwiYzGKdaiACx-Ekn6Aopcs7XU5e-VruHaq2-qIbZmDmP1trifTlvreZGLQ9OHragix5cfaZM&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Cake
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Moist cake layered with matcha cream.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCp-aET0E_9OK2fBkZta29u52VaZ6bdOLmOBZb-lSCqQRCooKIO6y5QMDn4QZZNBrI-Oq-Fm0r31KoIH3cKEpAKcyMxw1eue7azrx14NY24RhqU1BkqElOgKYanZpRScGYgEdtH-iX9gAvV35t-6z0ctRaHGqyfLjYUlyAgcTIg5bDFkC_m1SixMEnnIe6dKFy40t8DzkIvMV1nNc7PhioQx0sxTrwQEjX19qYFDxh_ErMj6pZgplqXt585xDoUYq3vjPVXMuRefgU&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Cookies
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Chewy cookies with matcha chips.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDLeRjFc9kzhEYPlvUJBs-TmhlYQIW3Em5n29jIKE6XdSSS5uQAz6F8glqMBef6ZhyraGoR0mH6dsmOeihSq4YJ_3o4CcsPnGJLFlxrTT4DFAmDU9HLoKYUaXSvcqqxIGVmdpJnEw3H0tpwSV3wPJWWvW1M2cY2ELfZZ9-J_ftFcOpHjmTTRhEGkd6HQx-yO64-wFWrGmMRzYeo4CY8pkRJSClGqzGJV3GU1eBo3GbyaSIw9Tm8M8GrqkE7aI7QTrGWaSqV3r1gC6U&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Truffles
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Rich truffles coated in matcha powder.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <h2
+                            class="text-[#121b0e] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5"
+                        >
+                            Merchandise
+                        </h2>
+                        <div
+                            class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4"
+                        >
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCDNcm82TIJ4AueRRRQ_bG2LUG5izzBGhNfCYnO-DJFhbXpb0wjEOpXd4u-asvt1oOxECCPedqu0D6a_dUhf8HTzQ6z_FLcQP8vwR0LzkqRSOAXfn14UTdZsx191AuS2cIDOSOMFTUN2He36A0f1vFAt-D-Ac0vv6W_37EZcb8e6UcQpAADnBHIq5LqZ0zA_3WtREIWQZ2isTF4PdrI4dHK4NDGVlwCm8rw72zdmwcyU1TXLI-IWZthpRdqfBQ97BpTZ5GYn-QfUdU&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Powder
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Premium matcha powder for your home
+                                        brewing.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAJTp9gvtD7sNwkZuMz4LUVRiHBLu_TwmVdsXoZigtmd09yhyraMaSaAfsS19yRy1Z4DchXf5dX7zNuLEPtkdKoA45kI6r9iYujTB0-ZhTcIwTvHoYpn4MSm6Sck9xASzx4tiNmHu9yQFki03s_y_bBYb7oucAZD5LHh4FDgz3w8x-tCmt0K0PfuF4YqV98vukAjD37hfTBhqS74cOb_w5HMxuTqrD1TufmY6yvYah9xaZYfjcJ1zZnQB_einfs9yLiZY4BCMsN-Cw&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Whisk Set
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Complete set for whisking matcha.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCq28DhSofbNqezSP9PmXmELLoegSJTW7fN7fENaCKy-orgtOkh1Sec6u3ISKZWzGf1fdZ22_0h3haqRH0F6fxo61vJUMvuoKQP17m7NABmvGhV3Jel4OeJ_kqB385Pw_E6_dt_2BL-GZnGAxMvGM6fbHPTHY7kAtwK0g9y6MjzJBXv9Az3kkI-byPwt9IkGhdySEEj7aw_I9q_DtdPmcjKyeOfgQIkU0632RI7yO7R8RtAK3cPVMRta3eIlvCVbwSNzfbnJ0AX4v4&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Bowl
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Elegant bowl for preparing matcha.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-3 pb-3">
+                                <div
+                                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                                    style="
+                                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDviP2hgAF725VWBPDiTEFMn7M_-l937ldJA5z7nww0v7JOnLEY6Ngl8Iylwad2kFzOCZ3b8bfDtm11nKnz1zulstqknlDy3EPsdL1AJfTp-PB6xZNKNhX_jQepdEZM5bGy85tBT1BIR1AA4FNxvvBi4p1qQ-wA3BrBPuGiUa7c85HDGVKpbaUxhrz0tvKnoP4_fCs49GH7pQ0bsh1YpM5DoTpq3bYHBL-cyDI8rZvqHvBoXkrQ0_aWHMzlukMzsVs3KSg1D5MivDI&quot;);
+                                    "
+                                ></div>
+                                <div>
+                                    <p
+                                        class="text-[#121b0e] text-base font-medium leading-normal"
+                                    >
+                                        Matcha Spoon
+                                    </p>
+                                    <p
+                                        class="text-[#67974e] text-sm font-normal leading-normal"
+                                    >
+                                        Traditional spoon for stirring matcha.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
