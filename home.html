@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>The OlynCha - Matcha Cafe &amp; Online Delivery</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Jost", sans-serif;
+            }
+            .font-playfair {
+                font-family: "Playfair Display", serif;
+            }
+            .bg-matcha-light {
+                background-color: #f0f5f1;
+            }
+            .bg-matcha-green {
+                background-color: #3d643b;
+            }
+            .text-matcha-green {
+                color: #3d643b;
+            }
+            .border-matcha-green {
+                border-color: #3d643b;
+            }
+            @keyframes float {
+                0% {
+                    transform: translateY(0px);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+            .float-animation {
+                animation: float 3s ease-in-out infinite;
+            }
+        </style>
+    </head>
+    <body class="bg-white">
+        <header class="relative h-screen text-white overflow-hidden">
+            <div class="absolute inset-0">
+                <img
+                    alt="Matcha being the olyncha"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJuESxaKIQMjctTM0p2kzRM_3KRrpMUzv9h8tVNFsMlXG7ViaJ2HlCy_lftswdIXPwW00tHkGB3tD54n8Pq9oG12pmvngtQpErSSZ_pluv5OviPsPnEuKj4hAtEGnwdJ1ptccXoY8OjCPf-lJi_jDSY2GM0GYl_WajEDA0ccIfSZfq1C-haN73tv0oLQewdaimJLFe_SExTBkPJCuMjQPDa6t49CGZYy9zzQm7hQ9-D00lb0_NVkV4Hme1VQuBfcr43sLSOnuuaiU"
+                />
+            </div>
+            <div class="absolute inset-0 bg-black opacity-30"></div>
+            <div class="relative z-10 p-8 md:p-12">
+                <div class="flex justify-between items-start">
+                    <div
+                        class="flex items-start transition-transform duration-300 hover:scale-110"
+                    >
+                        <span class="font-playfair text-8xl">32</span>
+                        <span class="mt-2 ml-2 text-sm uppercase"
+                            >Signature<br />Drinks</span
+                        >
+                    </div>
+                    <div
+                        class="text-right transition-transform duration-300 hover:scale-110"
+                    >
+                        <span class="font-playfair text-8xl">08</span>
+                        <span class="block mt-2 text-sm uppercase"
+                            >Local &amp; global<br />
+                            sourcing</span
+                        >
+                    </div>
+                </div>
+                <div
+                    class="absolute bottom-24 left-8 md:left-12 transition-transform duration-300 hover:scale-110"
+                >
+                    <span class="font-playfair text-9xl">2K</span>
+                    <span class="block text-sm uppercase"
+                        >Loyal<br />Customers</span
+                    >
+                </div>
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center transition-transform duration-300 hover:rotate-[-2deg]"
+                >
+                    <h1 class="font-playfair text-9xl leading-none">olyncha</h1>
+                    <p class="uppercase text-sm tracking-widest mt-2">
+                        enjoy matcha<br />with olyncha
+                    </p>
+                </div>
+                <div
+                    class="absolute bottom-12 right-12 transition-transform duration-300 hover:rotate-12 hover:scale-110"
+                >
+                    <img
+                        alt="Pouch of matcha"
+                        class="w-24 h-auto"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1UW3lJHcH2_BPMRrjrclIyOZHJWVHwwIph17wVOWPd2cBMvodnWlelkIMNJBoEDl2cwzSknKhfWN5JSrF9ucaDV8DOrRyJqBmRDRg7gMzg5eNac8GRwtyCZ-TkZ2vqzYy_p99WKFxswElHUWGDJCuA16-hmuOWFEmbh-Am0ns0u5qxvGM2znyH43an7O22WiPMjd4bTDxyEIHiowFjrBL1SQlQc0x_-fXr2k8gB3F9oBbcxQZS5emu6hpWCdV-fJkCb5NxMsyGW8"
+                    />
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="grid grid-cols-1 md:grid-cols-2">
+                <div
+                    class="bg-gray-100 p-8 md:p-16 flex items-center justify-center overflow-hidden"
+                >
+                    <img
+                        alt="Animated character olyncha matcha"
+                        class="max-w-xs w-full transition-transform duration-500 hover:scale-110 hover:rotate-3"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiAuphwsGqtc-fnNsD0gxfc_8Jcl-FWLlAKefwa9FCeQXpiovIBat_zS-MOeu2Q4NlzkmcuRr5RL3sIl97f-QoAdBb62b0N9kCaWxzboffNvYAjg1zt3AYOTF_q0SzwgilztE3AXEeW4-cy6rox_rcHxvmWVaZrvC3rCxsreI0jqOw7YDBzJE2hiRjdPxso9KnlrlY8lW5JDs4kTAb9XSPzftxLrX1QFw2c8bs8x0zYGVIgVI0MEFy4ZA283_GoLQQBPFnNX-v9V8"
+                    />
+                </div>
+                <div
+                    class="bg-stone-100 p-8 md:p-16 flex items-center justify-center overflow-hidden"
+                >
+                    <img
+                        alt="Glass of sans matcha"
+                        class="max-w-xs w-full transition-transform duration-500 hover:scale-110 hover:-rotate-3"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7no3v_suebCORqhLJo6JAANgQaguQOs_Ajp5KMi5yLW9VsM_uX3soQl7LIxvY1H9R1lmk8AU7RhcqnnqfNBMuXfk0ige2LCfb65gQRuuEizt0CkYc5EVrRgpOL3A1fJHxeuKkSKp46f9hxqrSFWPk40ej9b4z4nGd5ACAVIzseJ_oa_vnG85xw41fpcr1dV4iQ-B30ex2Cav8LeA-mWDMu7UG1O3D8-H3v6OVme2q4pfr2YVugzd3TpxxqAbFDuUTqzy4V8BF5A4"
+                    />
+                </div>
+            </section>
+            <nav class="py-6 border-b border-t border-gray-200">
+                <ul
+                    class="flex justify-center space-x-8 text-xs uppercase tracking-widest text-gray-500"
+                >
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Signature Menu</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Matcha Powder</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Matcha Kit</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Sans at Events</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Merchandise</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <section class="text-center py-20 px-4 bg-matcha-light">
+                <h2
+                    class="text-7xl font-playfair mb-12 transition-transform duration-300 hover:scale-105"
+                >
+                    convenience
+                </h2>
+                <div class="relative inline-block">
+                    <img
+                        alt="Cute matcha character"
+                        class="w-48 mx-auto float-animation"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAClld0Odv1nu9_L58lh-rNMW_C6R1MmfRuDtR1z7J_s8i_5dqaUYfEnYv1VLhqe6bWqIQhplyZt3w5-5fpMj0suJTQ9SN9CTr64vDYoqhqC82T1-hzvT2evYHdtkxJ6ObORHzZOXgpU6s0U3rVqBWviftfx2eyJ2lM3avEqaQBd4GLqHZISWQP0HlmL9sSYiXZG6Nk9Vnh1-HRT5Y-WXlJ7w_8J2eUHpL9TdYL-XoCAZNJP7lkC43TgYRhM8TfdJCkb3y0l3_EW7Q"
+                    />
+                    <div class="absolute top-1/4 -left-32">
+                        <button
+                            class="bg-lime-300 text-black text-xs font-bold py-2 px-4 rounded-full transition-all duration-300 hover:bg-lime-400 hover:scale-110 hover:shadow-lg"
+                        >
+                            LIKE MATCHA
+                        </button>
+                    </div>
+                    <div class="absolute top-1/2 -left-48 mt-4">
+                        <button
+                            class="bg-white border border-gray-300 text-gray-700 text-xs font-bold py-2 px-4 rounded-full transition-all duration-300 hover:bg-gray-100 hover:scale-110 hover:shadow-lg"
+                        >
+                            MATCHA IN NEW WAVE
+                        </button>
+                    </div>
+                    <div class="absolute top-1/2 -right-48 mt-4">
+                        <button
+                            class="bg-lime-300 text-black text-xs font-bold py-2 px-4 rounded-full transition-all duration-300 hover:bg-lime-400 hover:scale-110 hover:shadow-lg"
+                        >
+                            MATCHA POWDER
+                        </button>
+                    </div>
+                    <div class="absolute top-1/4 -right-32">
+                        <button
+                            class="bg-red-400 text-white text-xs font-bold py-2 px-4 rounded-full transition-all duration-300 hover:bg-red-500 hover:scale-110 hover:shadow-lg"
+                        >
+                            MATCHA COOKIES
+                        </button>
+                    </div>
+                </div>
+                <p class="max-w-md mx-auto text-gray-600 mt-24">
+                    We’re not just selling matcha — we're delivering an
+                    experience you can see, feel and trap our taste right in
+                    your home
+                </p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <button
+                        class="bg-green-700 text-white py-3 px-6 rounded-full text-sm font-semibold transition-transform duration-300 hover:bg-green-800 hover:scale-105"
+                    >
+                        SHOP CONVENIENT
+                    </button>
+                </div>
+            </section>
+            <nav class="py-6 border-b border-t border-gray-200">
+                <ul
+                    class="flex justify-center space-x-8 text-xs uppercase tracking-widest text-gray-500"
+                >
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Signature Menu</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Matcha Powder</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Matcha Kit</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Sans at Events</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="hover:text-black hover:font-bold transition-all"
+                            href="#"
+                            >Merchandise</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+            <section class="py-20 px-4">
+                <div class="text-center">
+                    <img
+                        alt="SD Menu"
+                        class="mx-auto w-auto h-24 transition-transform duration-500 hover:rotate-[360deg]"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoB7ZZofh9StCR0BB0kh17LeDT-A62MaelrF7gkuPCs-LS8NVy80zYkiO9T2gfib-RCUO4tONuH8KPEsrD0dEplUv3Z8GPKwl2xny6Zvfidl3-i1XnqHFNQJRUpmq1bPsOYNcrY0xEZiMWYial-PxWipmnRDNYXE-VA8V9mrRXycAM1jAbhE1hq7X_P74NRlDPpSFzlnUBwL08CINPLTYSpd-l8GdXbnRv8HQWv45EewJ0e985yJeJzPSlOrkuiVZjoBJq_e4yv7I"
+                    />
+                    <button
+                        class="mt-8 bg-red-400 text-white py-2 px-5 rounded-full text-xs font-bold transition-all duration-300 hover:bg-red-500 hover:scale-110"
+                    >
+                        CONVENIENT PRODUCTS
+                    </button>
+                </div>
+                <div
+                    class="mt-16 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"
+                >
+                    <div class="text-left group">
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-xs text-gray-500">01</span>
+                            <span class="text-xs text-gray-500">DRINKS</span>
+                        </div>
+                        <div class="overflow-hidden rounded-lg my-4">
+                            <img
+                                alt="Strawberry Matcha drink"
+                                class="w-full rounded-lg transition-transform duration-300 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO5lkjPexV2Gk-ttrsv04h9qb3_uhnbZqN_OxKf__SC4NaWFRaekAGGLp6tOmGnpriy0Dx4PPFBBs4gXp5XWbBIvD2yPd_Z8m0DL5aTqaU121CASk4KPHdHDPhZuoXNPOhGY9SvHhhX_vvNfVNHvCAjVRzUxKS2JrW0DZKgmh8W4qVnTut9RwEZsD4h1oZCv03huuecPwyilK_ablp_3P3fQ40agKk95hWSLOkyJaliR8_VJtLr-Z-kYB7p1UEhBqQakneoy5ODCY"
+                            />
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold">STRAWBERRY MATCHA</h3>
+                            <span class="font-bold text-lg">$3.5</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">
+                            Strawberry puree, premium matcha
+                        </p>
+                    </div>
+                    <div class="text-left group">
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-xs text-gray-500">02</span>
+                            <span class="text-xs text-gray-500">DRINKS</span>
+                        </div>
+                        <div class="overflow-hidden rounded-lg my-4">
+                            <img
+                                alt="Matcha Latte"
+                                class="w-full rounded-lg transition-transform duration-300 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzUgn7hICSgCEODY1ixh2d8HDIMHb1pBVhD30-sz72N6GaQ7mjY15--IgYxx8uk2a6lTw9NUdkIehKbP70dJ_jdNDMQxHcrWv6tNn6YtYpd0W8oHpmDc2mwWnV4wlZVkopDz7j_ilC11A5FF3S2bUray0SF5jWba9OnPDdQHmuKK7CsTdq8hrq95A1CHqI1TSTMukrB4z99Ss8NaakTbKBAcOd_sB7JblbfsMnaSIR847hjnrbKNgZrokgPGivMf17yAti6IcA4MI"
+                            />
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold">MATCHA LATTE</h3>
+                            <span class="font-bold text-lg">$3.5</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">
+                            Our signature premium matcha desserts
+                        </p>
+                    </div>
+                    <div class="text-left group">
+                        <div class="flex justify-between items-baseline">
+                            <span class="text-xs text-gray-500">03</span>
+                            <span class="text-xs text-gray-500">DRINKS</span>
+                        </div>
+                        <div class="overflow-hidden rounded-lg my-4">
+                            <img
+                                alt="Matcha Lemonade"
+                                class="w-full rounded-lg transition-transform duration-300 group-hover:scale-110"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCt9mfMREhmNrAcNIxQw0GFRoJCfM5nxcH6e70gbGEdzBTQHlyHImUW3McOXsqFI0wLeYXOlycIWu8rY5phOI8uFu7jSuTchLC1iJizsEhgta7GRXYDdxvtUdQVaVnzm2TB6fxhmD9aorQ4VdfwRPc8xKkE6BFwlimmo5yNMXD3PEOW5EpHM3KANtyTKhoA8ESICTazua9L-Z9tpVeqa5ZYbkytpz1ga6WRi9KEGFs3SUBnECTJELYs9036_XJGY3eqiS_jy-SAslc"
+                            />
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-bold">MATCHA LEMONADE</h3>
+                            <span class="font-bold text-lg">$3.5</span>
+                        </div>
+                        <p class="text-gray-500 text-sm">
+                            Refreshing lemonade with a matcha shot
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="mt-20 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+                >
+                    <div class="group">
+                        <img
+                            alt="Premium matcha icon"
+                            class="mx-auto h-20 transition-transform duration-300 group-hover:animate-bounce"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1QwVuChL2b5KIG1zaPVk04bj3nd_S73vLxAIuvuq8R0qawncM0z3t6hCSxMtQxsr4VROJ3tCNvd6QdqSE9Vr0prJe-JRRJ9tYF5R-O-9YfstCPY8p50mTBeGiJHJDrKtdZx2wbcghgyKTLMZ51NkbrkoLHW7sDYd0FZ3nu57bhZxiNBjfehHIzN_OPwFMH4FWmIZ_2KNDiUoa7I5SiJFo1_oaaydDclD9XiInj75yzuIW_lvNh71A86WGiIdZ3hBY85WTWJO16UY"
+                        />
+                        <h4 class="font-bold mt-4">PREMIUM MATCHA</h4>
+                        <p class="text-gray-500 text-sm">
+                            The best premium matcha from Uji, Kyoto
+                        </p>
+                    </div>
+                    <div class="group">
+                        <img
+                            alt="Spill proof icon"
+                            class="mx-auto h-20 transition-transform duration-300 group-hover:animate-bounce"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3S5D26N4Ax-lPIeqwagcV-aPXGyMegn1Zx09QH3iyBP1YbH6UI0052FoyJ2e-LyAsTioyk6Q6Ul4bfEae2yV-UsFMDJ4E1Z4UvHet10fJ50vcaINQYzoYKUADK8QFuyJWpS-DgPlKDyKO700acERx8yRl5-O9gIrEjKIZDjDcgVojiqX83cnMSnyyisRMd1-shq6WkXdDejARSqSBUkI_eIVDGoOuLZexjJzvss_uvUrsd1TX2t75y011sM0mlvIm1k_hMSmvKqQ"
+                        />
+                        <h4 class="font-bold mt-4">SPILL PROOF</h4>
+                        <p class="text-gray-500 text-sm">
+                            Spill-proof packaging without a single<br />plastic
+                            waste
+                        </p>
+                    </div>
+                    <div class="group">
+                        <img
+                            alt="Fast delivery icon"
+                            class="mx-auto h-20 transition-transform duration-300 group-hover:animate-bounce"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlp0wrG50ZyngEJ2P1sQV6NFsi9u-rH_Vcj1CGhDMZ3kN698x-K1ZMVNVOeqVPWjMO5IIio2TM932dixea2mti-MvyjUX9aYKWC1hJgYPw1DTYkHyVtcbnKJF0etnoMBoFRDbIeXSqlmQhMA9woY5zsg-h2d7t0UNBcErtzoiejjhZcytGPh0y73jQbQz-9HCgiDfeACc47PUVBZxImrCo08Dyfqo1oqq--NuVVZNxRVAv522JbLgu0ql9ffVk5pLkXQeDsXi1Nvs"
+                        />
+                        <h4 class="font-bold mt-4">FAST AF DELIVERY</h4>
+                        <p class="text-gray-500 text-sm">
+                            We'll get your matcha to you in a flash
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-matcha-light py-20 px-4">
+                <h2
+                    class="text-8xl font-playfair text-center mb-12 transition-transform duration-300 hover:tracking-wider"
+                >
+                    eco-respect
+                </h2>
+                <div class="relative group">
+                    <img
+                        alt="Pouring matcha into a glass"
+                        class="w-full h-auto"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFBEeQQh8W-wb5sDj4oFJ07NsXGRPai2HwwLtNlvHZEqCtOrfKxzXkcbTZTEGE6fVOnERd4l7QTdeO38KDMpG6QnDiNzfZiuAekD8rMRPi2zSMth7c5GA_KdAOH8LvwTiDD0fLiolQ75i4aEjHkoCXJg5G2mblE8ngoLirT2pGuYyCo7O5Zqh-VRIjQ-7E7KJCEdTiFEK5MtIyDwDUOB_XfCd3mLtkin-8UTJveHY9f-sLfaOA2HdtPE5ypiAtCcqLdtnoeu0LDB0"
+                    />
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"
+                    ></div>
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    >
+                        <button
+                            class="bg-white p-3 rounded-full shadow-lg transition-transform hover:scale-110"
+                        >
+                            <svg
+                                class="h-6 w-6 text-gray-800"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M15 19l-7-7 7-7"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                ></path>
+                            </svg>
+                        </button>
+                        <button
+                            class="bg-white p-3 rounded-full shadow-lg transition-transform hover:scale-110"
+                        >
+                            <svg
+                                class="h-6 w-6 text-gray-800"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M9 5l7 7-7 7"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-12 flex justify-center space-x-4">
+                    <button
+                        class="text-xs font-bold py-2 px-4 rounded-full bg-lime-300 text-black transition-all duration-300 hover:bg-lime-400 hover:shadow-md hover:-translate-y-1"
+                    >
+                        FRESH MATCHA
+                    </button>
+                    <button
+                        class="text-xs font-bold py-2 px-4 rounded-full border border-gray-400 text-gray-600 transition-all duration-300 hover:bg-gray-100 hover:shadow-md hover:-translate-y-1"
+                    >
+                        MATCHA PRODUCT
+                    </button>
+                    <button
+                        class="text-xs font-bold py-2 px-4 rounded-full border border-gray-400 text-gray-600 transition-all duration-300 hover:bg-gray-100 hover:shadow-md hover:-translate-y-1"
+                    >
+                        PRODUCT KITS
+                    </button>
+                </div>
+                <div
+                    class="mt-8 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4"
+                >
+                    <img
+                        alt="Person drinking matcha with a straw"
+                        class="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb1cT53LqLeK19zM6NjR-jsVjfD_YxHTXEZ01S86DkKlnvPVW9_4qeLqCtQQT-6zRyFIWhVyVEQqbWMXQZ0kigGgPOvEZyE9OK_VEpkysLYsfbdGvHxae12szAgch9SYPpoUHE8287mdE5Rc44Oodz8bIxWdZJVGU0ITp_qBx97pMuyeiblMuFsdMdO4Tob2D8vXW9x0U-MyNPlGcgIhIKKr8Kpa8Z2w93EkXIPmWOgiivoEw7GD5hSAVlZNAELZOf99UxTUd6UMg"
+                    />
+                    <img
+                        alt="Olyncha matcha in a bowl"
+                        class="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNdCNhM_LDyAGJt1iEfRfAmQJuv92uoT4GoxMNFmRNwqyFs-rAZ9Y5igfnKC4UpnXbSBYUTaLveVB8_OaFflvueSoR5bi3cpzYPQq8dp_TLmQsp5HVReQGObxeI0xli6F2Tcaxo9EgT0FcvntRO5XnwooXvz5-0yDtsvsh8D_yBz2hLNte0cKZevo6Y70kaMIjLXtTQFkK7WzT70VvStKRjxKBZgHQSHd11ET_KS14_qvo4tR6oWkVIgiuVJpF22qJqFaLRjoUs48"
+                    />
+                    <img
+                        alt="Matcha product kit"
+                        class="w-full h-auto rounded-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwqGTRmUpmDJYOVkJGW-pZhqFYO1rodpkJzOzMIwFeCMscpKku609EPE2l5bt1XI16Dv6EobteuFcgKKBqDDUC12i0FmTcMp6-JRiGgE7ztXS5BXoen28KgHbXjsIkxliYgGEeuN2dZ66hbfP_swygN94yl3wvckhOgz9qXdkJUHwvwFzDJyJy_Q1_fjqfkQMSFI0osIdn-fpY9ryKq67AA1H6N1XXKD8UAcEq4-WKbB9cY_hEoFs8qf8fucB4CP1JMRy2uSpgrek"
+                    />
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

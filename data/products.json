@@ -1,0 +1,116 @@
+{
+  "matcha-latte": {
+    "id": "matcha-latte",
+    "name": "Matcha Latte",
+    "description": "Our signature matcha latte, made with premium matcha powder and your choice of milk. Customize your sweetness and add-ons for a perfect cup.",
+    "basePrice": 5.95,
+    "image": "🍵",
+    "category": "Drinks",
+    "sizes": [
+      { "name": "Small", "price": 4.95 },
+      { "name": "Medium", "price": 5.95 },
+      { "name": "Large", "price": 6.95 }
+    ],
+    "milkOptions": ["Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk", "Coconut Milk"],
+    "sweetnessLevels": ["Unsweetened", "Half Sweet", "Regular", "Extra Sweet"],
+    "addOns": [
+      { "name": "Extra Shot", "price": 0.75 },
+      { "name": "Vanilla Syrup", "price": 0.50 },
+      { "name": "Whipped Cream", "price": 0.50 }
+    ]
+  },
+  "matcha-frappuccino": {
+    "id": "matcha-frappuccino",
+    "name": "Matcha Frappuccino",
+    "description": "A refreshing blended drink with matcha, ice, and your choice of milk. Perfect for hot days.",
+    "basePrice": 6.45,
+    "image": "🥤",
+    "category": "Drinks",
+    "sizes": [
+      { "name": "Small", "price": 5.45 },
+      { "name": "Medium", "price": 6.45 },
+      { "name": "Large", "price": 7.45 }
+    ],
+    "milkOptions": ["Whole Milk", "Almond Milk", "Oat Milk", "Soy Milk", "Coconut Milk"],
+    "sweetnessLevels": ["Unsweetened", "Half Sweet", "Regular", "Extra Sweet"],
+    "addOns": [
+      { "name": "Extra Shot", "price": 0.75 },
+      { "name": "Whipped Cream", "price": 0.50 },
+      { "name": "Caramel Drizzle", "price": 0.50 }
+    ]
+  },
+  "matcha-ice-cream": {
+    "id": "matcha-ice-cream",
+    "name": "Matcha Ice Cream",
+    "description": "A cool and creamy treat with the distinctive flavor of matcha. Made with premium ingredients.",
+    "basePrice": 6.99,
+    "image": "🍦",
+    "category": "Desserts",
+    "sizes": [
+      { "name": "Single Scoop", "price": 4.99 },
+      { "name": "Double Scoop", "price": 6.99 },
+      { "name": "Triple Scoop", "price": 8.99 }
+    ],
+    "milkOptions": [],
+    "sweetnessLevels": [],
+    "addOns": [
+      { "name": "Mochi", "price": 1.50 },
+      { "name": "Red Bean", "price": 1.00 },
+      { "name": "Chocolate Chips", "price": 0.75 }
+    ]
+  },
+  "matcha-tiramisu": {
+    "id": "matcha-tiramisu",
+    "name": "Matcha Tiramisu",
+    "description": "Traditional Italian dessert with a Japanese twist using premium matcha. Layers of mascarpone and matcha-soaked ladyfingers.",
+    "basePrice": 8.99,
+    "image": "🍰",
+    "category": "Desserts",
+    "sizes": [
+      { "name": "Individual", "price": 8.99 },
+      { "name": "Sharing", "price": 15.99 }
+    ],
+    "milkOptions": [],
+    "sweetnessLevels": [],
+    "addOns": [
+      { "name": "Extra Matcha Powder", "price": 0.50 },
+      { "name": "Whipped Cream", "price": 0.50 }
+    ]
+  },
+  "matcha-tea": {
+    "id": "matcha-tea",
+    "name": "Traditional Matcha Tea",
+    "description": "Pure ceremonial grade matcha whisked to perfection. Experience the authentic taste of Japan.",
+    "basePrice": 4.50,
+    "image": "🍃",
+    "category": "Drinks",
+    "sizes": [
+      { "name": "Regular", "price": 4.50 },
+      { "name": "Large", "price": 6.50 }
+    ],
+    "milkOptions": [],
+    "sweetnessLevels": ["Traditional (No Sugar)", "Lightly Sweetened"],
+    "addOns": [
+      { "name": "Traditional Sweets", "price": 2.50 }
+    ]
+  },
+  "matcha-smoothie": {
+    "id": "matcha-smoothie",
+    "name": "Matcha Smoothie",
+    "description": "A healthy blend of matcha, banana, spinach, and your choice of milk. Packed with antioxidants.",
+    "basePrice": 7.95,
+    "image": "🥬",
+    "category": "Drinks",
+    "sizes": [
+      { "name": "Regular", "price": 7.95 },
+      { "name": "Large", "price": 9.95 }
+    ],
+    "milkOptions": ["Almond Milk", "Oat Milk", "Soy Milk", "Coconut Milk"],
+    "sweetnessLevels": ["No Added Sugar", "Honey", "Agave"],
+    "addOns": [
+      { "name": "Protein Powder", "price": 1.50 },
+      { "name": "Chia Seeds", "price": 0.75 },
+      { "name": "Extra Banana", "price": 0.50 }
+    ]
+  }
+}

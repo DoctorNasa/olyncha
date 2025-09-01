@@ -1,0 +1,112 @@
+{
+  "name": "The Olyn Cha",
+  "tagline": "Premium Matcha Tea",
+  "subBrand": {
+    "kanji": "緑風",
+    "romaji": "Midori-kaze",
+    "english": "Green Breeze"
+  },
+  "location": {
+    "city": "Rochester",
+    "state": "NH",
+    "country": "USA",
+    "fullAddress": "123 Main Street, Rochester, NH 03867",
+    "coordinates": {
+      "lat": 43.3045,
+      "lng": -70.9760
+    }
+  },
+  "contact": {
+    "email": "hello@olyncha.com",
+    "phone": "+1 (603) 555-0123",
+    "hours": {
+      "monday": "9:00 AM - 6:00 PM",
+      "tuesday": "9:00 AM - 6:00 PM",
+      "wednesday": "9:00 AM - 6:00 PM",
+      "thursday": "9:00 AM - 6:00 PM",
+      "friday": "9:00 AM - 7:00 PM",
+      "saturday": "9:00 AM - 7:00 PM",
+      "sunday": "9:00 AM - 6:00 PM"
+    }
+  },
+  "social": {
+    "instagram": "@theolyncha",
+    "facebook": "theolyncha",
+    "tiktok": "@theolyncha",
+    "twitter": "@theolyncha"
+  },
+  "delivery": {
+    "doordash": "https://doordash.com/store/the-olyn-cha",
+    "ubereats": "https://ubereats.com/store/the-olyn-cha",
+    "grubhub": "https://grubhub.com/restaurant/the-olyn-cha"
+  },
+  "promoBanner": {
+    "enabled": true,
+    "text": "BUY 1 GET 1 • Today Only",
+    "link": "/order",
+    "backgroundColor": "#C8102E",
+    "textColor": "#FFFFFF"
+  },
+  "seo": {
+    "title": "The Olyn Cha — Premium Matcha in Rochester, NH",
+    "description": "Ceremonial matcha, not-as-bitter. Signatures like 緑風 Midori-kaze and Strawberry Matcha Latte.",
+    "keywords": ["matcha", "green tea", "rochester nh", "ceremonial matcha", "matcha latte", "japanese tea"],
+    "ogImage": "/og-cover.jpg"
+  },
+  "testimonials": [
+    {
+      "id": "1",
+      "name": "Sarah Chen",
+      "rating": 5,
+      "text": "The best matcha I've had outside of Japan! The Midori-kaze is absolutely perfect.",
+      "date": "2024-03-15"
+    },
+    {
+      "id": "2",
+      "name": "Michael Rodriguez",
+      "rating": 5,
+      "text": "Finally, a matcha place that understands quality. Not bitter at all, just smooth and delicious.",
+      "date": "2024-03-10"
+    },
+    {
+      "id": "3",
+      "name": "Emma Thompson",
+      "rating": 5,
+      "text": "The strawberry matcha latte is my new obsession. Perfect balance of sweet and earthy.",
+      "date": "2024-03-08"
+    },
+    {
+      "id": "4",
+      "name": "David Kim",
+      "rating": 5,
+      "text": "Authentic ceremonial grade matcha. The attention to detail is impressive.",
+      "date": "2024-03-05"
+    }
+  ],
+  "faq": [
+    {
+      "question": "What makes your matcha 'not-as-bitter'?",
+      "answer": "We use only ceremonial-grade matcha from Uji, Kyoto, which is naturally sweeter and less bitter than culinary grade. Our careful preparation at the right temperature (175°F) preserves the delicate flavors."
+    },
+    {
+      "question": "Do you offer dairy-free options?",
+      "answer": "Yes! We offer oat milk, coconut milk, and almond milk alternatives for all our drinks at no extra charge for most options."
+    },
+    {
+      "question": "What is ceremonial grade matcha?",
+      "answer": "Ceremonial grade is the highest quality matcha, made from the youngest tea leaves with stems and veins removed. It has a vibrant green color, smooth texture, and naturally sweet taste."
+    },
+    {
+      "question": "Can I order online for pickup?",
+      "answer": "Yes! You can order through our website for pickup, or use DoorDash, UberEats, or Grubhub for delivery."
+    },
+    {
+      "question": "Do you offer catering services?",
+      "answer": "We offer catering for events with a minimum order of 10 drinks. Please contact us at hello@olyncha.com for more information."
+    },
+    {
+      "question": "Are your drinks sweetened?",
+      "answer": "Our pure matcha drinks are unsweetened by default. You can add natural sweeteners like honey or maple syrup upon request."
+    }
+  ]
+}
