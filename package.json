@@ -51,12 +51,15 @@
     "@types/node": "^20.10.0",
     "@vitejs/plugin-react-swc": "^3.10.2",
     "autoprefixer": "^10.4.20",
+    "@biomejs/biome": "^1.9.0",
     "esbuild": "0.24.0",
     "tailwindcss": "4.1.3",
     "vite": "6.3.5"
   },
   "scripts": {
     "dev": "vite --config vite.config.cjs",
-    "build": "vite build --config vite.config.cjs"
+    "build": "vite build --config vite.config.cjs",
+    "lint": "biome check src/components/Navigation.tsx src/utils/nav.ts tests/nav.test.ts",
+    "format": "biome format --write src/components/Navigation.tsx src/utils/nav.ts tests/nav.test.ts"
   }
 }
