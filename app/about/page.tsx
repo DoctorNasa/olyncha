@@ -9,14 +9,15 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <>
+    <div className="bg-[#f9fcf8] min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-b from-cream to-white">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="font-serif text-5xl md:text-6xl mb-6 text-ink" style={{ fontWeight: 700 }}>
+      <section className="pt-40 pb-16 px-6 md:px-10 lg:px-20">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-[#121b0e] text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 tracking-tight">
             About Us
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-24 h-1 bg-[#4bb814] mx-auto mb-8"></div>
+          <p className="text-[#121b0e] text-lg md:text-xl leading-relaxed max-w-4xl mx-auto">
             At Olyn Cha, we're passionate about bringing the vibrant flavors and health benefits of matcha to
             your everyday life. Our journey began with a simple desire: to share the unique experience of
             high-quality matcha with our community.
@@ -25,131 +26,212 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl mb-8 text-ink" style={{ fontWeight: 600 }}>
-              Our Story
-            </h2>
-            <div className="prose prose-lg max-w-none">
-              <p className="text-gray-700 leading-relaxed mb-6">
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-20">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-[#121b0e] text-3xl md:text-4xl font-bold leading-tight mb-6">
+                Our Story
+              </h2>
+              <p className="text-[#121b0e] text-base md:text-lg leading-relaxed mb-6">
                 Founded in 2018, Olyn Cha started as a small cafe in the heart of Rochester, NH. We quickly gained a
-                loyal following for our signature matcha lattes, smoothies, and baked goods. As demand grew, we
-                expanded our offerings to include online ordering and delivery, making it easier than ever to enjoy
-                our matcha creations from the comfort of your home.
+                loyal following for our signature matcha lattes, smoothies, and baked goods.
               </p>
-              <p className="text-gray-700 leading-relaxed">
-                From sourcing the finest matcha powder directly from renowned tea farms in Uji, Kyoto to crafting
-                innovative recipes, we're committed to excellence in every cup. Our matcha is carefully selected for
-                its vibrant color, smooth texture, and rich flavor profile.
+              <p className="text-[#121b0e] text-base md:text-lg leading-relaxed">
+                As demand grew, we expanded our offerings to include online ordering and delivery, making it easier
+                than ever to enjoy our matcha creations from the comfort of your home.
               </p>
+            </div>
+            <div className="bg-gradient-to-br from-[#4bb814] to-[#67974e] rounded-2xl p-8 text-white">
+              <div className="text-center">
+                <div className="text-5xl mb-4">🍵</div>
+                <h3 className="text-2xl font-bold mb-4">Since 2018</h3>
+                <p className="text-lg opacity-90">
+                  Serving premium matcha experiences in Rochester, NH and beyond
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Our Mission Section */}
-      <section className="py-20 bg-cream">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl mb-8 text-ink" style={{ fontWeight: 600 }}>
+      <section className="py-16 bg-[#f9fcf8]">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-[#121b0e] text-3xl md:text-4xl font-bold leading-tight mb-6">
               Our Mission
             </h2>
-            <div className="prose prose-lg max-w-none">
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Our mission is to provide a delightful and accessible matcha experience for everyone. We
-                believe in using only the highest quality ingredients, prepared with care and attention to
-                detail. We strive to create a welcoming atmosphere, both in our cafe and online, where customers can
-                discover the versatility and goodness of matcha.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                We're dedicated to sustainable practices and ethical sourcing, supporting the communities that cultivate
-                our exceptional matcha. Every cup you enjoy helps support traditional tea farming practices and
-                environmental stewardship.
-              </p>
-            </div>
+            <div className="w-24 h-1 bg-[#4bb814] mx-auto mb-8"></div>
+          </div>
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm">
+            <p className="text-[#121b0e] text-lg md:text-xl leading-relaxed text-center max-w-4xl mx-auto">
+              Our mission is to provide a delightful and accessible matcha experience for everyone. We
+              believe in using only the highest quality ingredients, prepared with care and attention to
+              detail. We strive to create a welcoming atmosphere, both in our cafe and online, where customers can
+              discover the versatility and goodness of matcha.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Meet the Team Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center text-ink" style={{ fontWeight: 600 }}>
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-20">
+          <div className="text-center mb-16">
+            <h2 className="text-[#121b0e] text-3xl md:text-4xl font-bold leading-tight mb-6">
               Meet the Team
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Team Member 1 */}
-              <div className="text-center">
-                <div className="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-matcha-300 to-matcha-500 rounded-full flex items-center justify-center">
-                  <span className="text-6xl">👩‍💼</span>
-                </div>
-                <h3 className="font-semibold text-xl mb-2 text-ink">Sarah Chen</h3>
-                <p className="text-matcha-600 font-medium">Founder & CEO</p>
-                <p className="text-gray-600 text-sm mt-3">
-                  Passionate about bringing authentic matcha culture to the West
-                </p>
-              </div>
+            <div className="w-24 h-1 bg-[#4bb814] mx-auto mb-8"></div>
+            <p className="text-[#121b0e] text-lg max-w-2xl mx-auto">
+              The passionate people behind your perfect matcha experience
+            </p>
+          </div>
 
-              {/* Team Member 2 */}
-              <div className="text-center">
-                <div className="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-matcha-300 to-matcha-500 rounded-full flex items-center justify-center">
-                  <span className="text-6xl">👨‍🍳</span>
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+            {/* Team Member 1 */}
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                  <div
+                    className="w-full h-full bg-center bg-cover transform group-hover:scale-105 transition-transform duration-300"
+                    style={{
+                      backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsVtLwg99okJ-O4GgBkCkarmaEXAlmouiCldrOFFCdN7CMnfY2GvQtERJioX4SwZ92G0ROabt3W3D7x3nVRFp7N2iocyMzPaMLv_4kR5P37FllTaURFAQ9uCbbbmi33-gZXe_QKpIGiwxcEeRHlJ8dC0rdJX0BTDld18en3o1K2ZepUWG-B6ttJfLY-GzpTx90u-1IWkQIdPcicgtCBiTo75JMDrpjWugsYbTR-QTUC-2pGZKaSm_5wUUaupcs0-XQQYvJn76sZx0")`
+                    }}
+                  ></div>
                 </div>
-                <h3 className="font-semibold text-xl mb-2 text-ink">David Lee</h3>
-                <p className="text-matcha-600 font-medium">Head Barista</p>
-                <p className="text-gray-600 text-sm mt-3">
-                  Master of matcha preparation with 10+ years of experience
-                </p>
               </div>
+              <h3 className="text-[#121b0e] text-xl font-bold mb-2">
+                Sarah Chen
+              </h3>
+              <p className="text-[#4bb814] font-semibold mb-3">
+                Founder & CEO
+              </p>
+              <p className="text-[#121b0e] text-sm leading-relaxed">
+                Passionate about bringing authentic matcha culture to the West
+              </p>
+            </div>
 
-              {/* Team Member 3 */}
-              <div className="text-center">
-                <div className="w-48 h-48 mx-auto mb-6 bg-gradient-to-br from-matcha-300 to-matcha-500 rounded-full flex items-center justify-center">
-                  <span className="text-6xl">👩‍💻</span>
+            {/* Team Member 2 */}
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                  <div
+                    className="w-full h-full bg-center bg-cover transform group-hover:scale-105 transition-transform duration-300"
+                    style={{
+                      backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAR3e3laE3AvDHetyK0jFYzRMiEwtHvkUxOfPU99GiSVZwjCigMXaZxDClwQDEaGnpsPK9VRH3yOncDxDluVz-ntbrYfmYUID9XRTFMa4XOnlE99mLgoz0oetiNg0wujXX1DmG5qWqu2L5MjyCZefwNLUl4rvDOYH94g09-zmqqCy4vM2wjCb23Cd5R86X_fzwWrtRxpCBh_Fp-dlk_jiUsUj1HDa-bLiaXYSyQrpoR0taLQ1ixCjZ-NRf9H8b9Rywjin10MhKhJ-8")`
+                    }}
+                  ></div>
                 </div>
-                <h3 className="font-semibold text-xl mb-2 text-ink">Emily Wong</h3>
-                <p className="text-matcha-600 font-medium">Marketing Manager</p>
-                <p className="text-gray-600 text-sm mt-3">
-                  Spreading the love for matcha through creative storytelling
-                </p>
               </div>
+              <h3 className="text-[#121b0e] text-xl font-bold mb-2">
+                David Lee
+              </h3>
+              <p className="text-[#4bb814] font-semibold mb-3">
+                Head Barista
+              </p>
+              <p className="text-[#121b0e] text-sm leading-relaxed">
+                Master of matcha preparation with 10+ years of experience
+              </p>
+            </div>
+
+            {/* Team Member 3 */}
+            <div className="text-center group">
+              <div className="relative mb-6">
+                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+                  <div
+                    className="w-full h-full bg-center bg-cover transform group-hover:scale-105 transition-transform duration-300"
+                    style={{
+                      backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVpyX0AaKLjd0hvQ9y5csEKmTk-AGYAVnE9BANJh-pwA3YTl15rkH6MbZLTc9VIOzwtIj1a5i60YYg2wHvmcmG1htIDQYCy9foUA85DTRWi2MbOekdgPMS9xwS9XCVRysSWOh3yh6Sirep8zCijOnNiRlkfGrk-YvVcWBj1l8lw64I8t99rcSSKujU92-Nou9NZKoX4C5byKaHQW4XixXgn7TLOOAIXGPSdvLOrlLqTSfBNuvvUMfrZPZLQ0qRQliudfI0Dx0_8UY")`
+                    }}
+                  ></div>
+                </div>
+              </div>
+              <h3 className="text-[#121b0e] text-xl font-bold mb-2">
+                Emily Wong
+              </h3>
+              <p className="text-[#4bb814] font-semibold mb-3">
+                Marketing Manager
+              </p>
+              <p className="text-[#121b0e] text-sm leading-relaxed">
+                Spreading the love for matcha through creative storytelling
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quality Commitment Section */}
-      <section className="py-20 bg-matcha-600 text-white">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-serif text-3xl md:text-4xl mb-8" style={{ fontWeight: 600 }}>
+      {/* Our Commitment to Quality Section */}
+      <section className="py-16 bg-gradient-to-br from-[#4bb814] to-[#67974e] text-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-10 lg:px-20">
+          <div className="text-center mb-12">
+            <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight mb-6">
               Our Commitment to Quality
             </h2>
-            <p className="text-lg leading-relaxed mb-8 opacity-90">
-              We source our matcha directly from renowned tea farms, ensuring the highest quality and freshness.
-              Our matcha is carefully selected for its vibrant color, smooth texture, and rich flavor profile.
-              We're dedicated to sustainable practices and ethical sourcing, supporting the communities that cultivate
-              our exceptional matcha.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="px-8 py-3 bg-white text-matcha-600 rounded-full font-semibold hover:scale-105 transition-transform"
-              >
-                Contact Us
-              </Link>
-              <Link
-                href="/menu"
-                className="px-8 py-3 border-2 border-white text-white rounded-full font-semibold hover:bg-white hover:text-matcha-600 transition-colors"
-              >
-                View Our Menu
-              </Link>
+            <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg md:text-xl leading-relaxed mb-8 opacity-95">
+                We source our matcha directly from renowned tea farms, ensuring the highest quality and freshness.
+                Our matcha is carefully selected for its vibrant color, smooth texture, and rich flavor profile.
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed opacity-95">
+                We're dedicated to sustainable practices and ethical sourcing, supporting the communities that cultivate
+                our exceptional matcha.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                <div className="text-3xl mb-3">🌱</div>
+                <h4 className="font-bold mb-2">Organic</h4>
+                <p className="text-sm opacity-90">Certified organic matcha</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                <div className="text-3xl mb-3">🏆</div>
+                <h4 className="font-bold mb-2">Premium</h4>
+                <p className="text-sm opacity-90">Ceremonial grade quality</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                <div className="text-3xl mb-3">🌍</div>
+                <h4 className="font-bold mb-2">Sustainable</h4>
+                <p className="text-sm opacity-90">Ethical sourcing practices</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
+                <div className="text-3xl mb-3">🚚</div>
+                <h4 className="font-bold mb-2">Fresh</h4>
+                <p className="text-sm opacity-90">Direct from Uji, Kyoto</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 md:px-10 lg:px-20 text-center">
+          <h2 className="text-[#121b0e] text-3xl md:text-4xl font-bold leading-tight mb-6">
+            Ready to Experience Premium Matcha?
+          </h2>
+          <p className="text-[#121b0e] text-lg mb-8 max-w-2xl mx-auto">
+            Join our community and discover the perfect matcha experience crafted with passion and expertise.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <button className="inline-flex items-center justify-center px-8 py-4 bg-[#4bb814] text-white text-lg font-bold rounded-xl hover:bg-[#3a9610] transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl">
+                Contact Us
+              </button>
+            </Link>
+            <Link href="/menu">
+              <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-[#4bb814] text-[#4bb814] text-lg font-bold rounded-xl hover:bg-[#4bb814] hover:text-white transform hover:scale-105 transition-all duration-200">
+                View Menu
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }

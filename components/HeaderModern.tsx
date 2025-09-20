@@ -31,18 +31,26 @@ const HeaderModern: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-cream/95 backdrop-blur-md py-4' : 'bg-transparent py-6'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled
+          ? 'bg-white/95 backdrop-blur-xl py-4 shadow-lg border-b border-gray-100'
+          : 'bg-transparent py-6'
       }`}
     >
-      <div className="container mx-auto px-6">
+      <div className="container">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-matcha-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+            <div className="relative w-12 h-12 bg-gradient-matcha rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
               <span className="text-2xl">🍵</span>
+              <div className="absolute inset-0 bg-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
-            <span className="font-bold text-xl hidden sm:block">Olyn Cha</span>
+            <div className="hidden sm:block">
+              <span className="font-playfair font-bold text-2xl bg-gradient-to-r from-green-700 to-green-500 bg-clip-text text-transparent">
+                Olyn Cha
+              </span>
+              <p className="text-xs text-gray-500 -mt-1">Premium Matcha</p>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,18 +59,20 @@ const HeaderModern: React.FC = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium hover:text-matcha-600 transition-colors"
+                className="relative text-sm font-medium text-gray-700 hover:text-green-600 transition-all duration-200 group"
               >
                 {link.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-matcha group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
+
             <button
               onClick={toggleCart}
-              className="relative px-4 py-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
+              className="relative p-3 bg-gray-50 hover:bg-green-50 rounded-2xl transition-all duration-200 hover:scale-105 group"
             >
-              <ShoppingBagIcon className="w-6 h-6" />
+              <ShoppingBagIcon className="w-6 h-6 text-gray-600 group-hover:text-green-600 transition-colors" />
               {getItemCount() > 0 && (
-                <span className="absolute -top-2 -right-2 bg-matcha-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-2 -right-2 bg-gradient-matcha text-white text-xs rounded-full w-6 h-6 flex items-center justify-center font-semibold animate-pulse-slow">
                   {getItemCount()}
                 </span>
               )}
@@ -73,37 +83,52 @@ const HeaderModern: React.FC = () => {
               <div className="relative">
                 <button
                   onClick={() => setShowUserMenu(!showUserMenu)}
-                  className="flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors"
+                  className="flex items-center gap-3 px-4 py-2 bg-gray-50 hover:bg-green-50 rounded-2xl transition-all duration-200 hover:scale-105 group"
                 >
-                  <UserIcon className="w-5 h-5" />
-                  <span className="text-sm font-medium">{authState.user?.name}</span>
+                  <div className="w-8 h-8 bg-gradient-matcha rounded-full flex items-center justify-center">
+                    <UserIcon className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-sm font-medium text-gray-700 group-hover:text-green-600">
+                    {authState.user?.name || 'User'}
+                  </span>
                 </button>
 
                 {showUserMenu && (
-                  <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+                  <div className="absolute right-0 top-full mt-3 w-56 bg-white rounded-2xl shadow-xl border border-gray-100 py-3 z-50 animate-scale-in">
+                    <div className="px-4 py-2 border-b border-gray-100">
+                      <p className="text-sm font-semibold text-gray-900">{authState.user?.name}</p>
+                      <p className="text-xs text-gray-500">{authState.user?.email}</p>
+                    </div>
                     <Link
                       href="/profile"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition-colors"
                       onClick={() => setShowUserMenu(false)}
                     >
-                      Profile
+                      👤 Profile Settings
                     </Link>
                     <Link
                       href="/orders"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition-colors"
                       onClick={() => setShowUserMenu(false)}
                     >
-                      Order History
+                      📦 Order History
                     </Link>
-                    <hr className="my-2" />
+                    <Link
+                      href="/favorites"
+                      className="block px-4 py-3 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600 transition-colors"
+                      onClick={() => setShowUserMenu(false)}
+                    >
+                      ❤️ Favorites
+                    </Link>
+                    <hr className="my-2 border-gray-100" />
                     <button
                       onClick={() => {
                         logout();
                         setShowUserMenu(false);
                       }}
-                      className="block w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100"
+                      className="block w-full text-left px-4 py-3 text-sm text-red-600 hover:bg-red-50 transition-colors"
                     >
-                      Sign Out
+                      🚪 Sign Out
                     </button>
                   </div>
                 )}
@@ -111,7 +136,7 @@ const HeaderModern: React.FC = () => {
             ) : (
               <Link
                 href="/auth/login"
-                className="px-6 py-2 border border-matcha-500 text-matcha-600 rounded-full text-sm font-semibold hover:bg-matcha-50 transition-colors"
+                className="btn btn-secondary px-6 py-2 text-sm font-semibold"
               >
                 Sign In
               </Link>
@@ -119,7 +144,7 @@ const HeaderModern: React.FC = () => {
 
             <Link
               href="/menu"
-              className="px-6 py-2 bg-matcha-500 text-white rounded-full text-sm font-semibold hover:scale-105 transition-transform"
+              className="btn btn-primary px-6 py-2 text-sm font-semibold shadow-lg"
             >
               Order Now
             </Link>

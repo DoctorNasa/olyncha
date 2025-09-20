@@ -7,7 +7,7 @@ const FooterModern: React.FC = () => {
 
   return (
     <footer className="bg-ink text-white pt-20 pb-8">
-      <div className="container mx-auto px-6">
+      <div className="container">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
