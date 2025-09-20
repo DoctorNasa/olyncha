@@ -1,10 +1,33 @@
 {
   "mcpServers": {
-    "playwright": {
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"],
+      "env": {},
+      "disabled": false,
+      "autoApprove": ["fetch"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "env": {},
+      "disabled": false,
+      "autoApprove": []
+    },
+    "filesystem": {
       "command": "npx",
       "args": [
-        "@playwright/mcp@latest"
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/roongrojphetkheaw/Documents/project/olyncha"
       ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": ["read_file", "list_directory"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
       "env": {},
       "disabled": false,
       "autoApprove": [
@@ -12,8 +35,29 @@
         "browser_navigate",
         "browser_take_screenshot",
         "browser_click",
-        "browser_evaluate"
+        "browser_evaluate",
+        "browser_type",
+        "browser_scroll",
+        "browser_wait_for_selector"
       ]
+    },
+    "sqlite": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sqlite",
+        "/Users/roongrojphetkheaw/Documents/project/olyncha/database.db"
+      ],
+      "env": {},
+      "disabled": true,
+      "autoApprove": []
+    },
+    "git": {
+      "command": "git",
+      "args": ["--version"],
+      "env": {},
+      "disabled": true,
+      "autoApprove": []
     }
   }
 }

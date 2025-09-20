@@ -26,7 +26,7 @@ const HeaderModern: React.FC = () => {
     { href: '/menu', label: 'Menu' },
     { href: '/about', label: 'About' },
     { href: '/locations', label: 'Locations' },
-    { href: '/order', label: 'Order' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (
@@ -184,7 +184,7 @@ const HeaderModern: React.FC = () => {
             </Link>
           ))}
           <Link
-            href="/order"
+            href="/menu"
             onClick={() => setIsMenuOpen(false)}
             className="mt-8 px-8 py-4 bg-white text-matcha-700 rounded-full text-center font-semibold hover:scale-105 transition-transform"
           >

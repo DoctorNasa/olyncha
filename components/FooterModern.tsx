@@ -68,8 +68,7 @@ const FooterModern: React.FC = () => {
             <nav className="flex flex-col gap-3">
               <Link href="/about" className="text-sm opacity-70 hover:opacity-100 hover:text-matcha-400 transition-all">About Us</Link>
               <Link href="/locations" className="text-sm opacity-70 hover:opacity-100 hover:text-matcha-400 transition-all">Locations</Link>
-              <Link href="/contact" className="text-sm opacity-70 hover:opacity-100 hover:text-matcha-400 transition-all">Contact</Link>
-              <Link href="/faq" className="text-sm opacity-70 hover:opacity-100 hover:text-matcha-400 transition-all">FAQ</Link>
+              <Link href="/contact" className="text-sm opacity-70 hover:opacity-100 hover:text-matcha-400 transition-all">Contact & FAQ</Link>
             </nav>
           </div>
 
@@ -103,10 +102,10 @@ const FooterModern: React.FC = () => {
               © {currentYear} The Olyn Cha. All rights reserved.
             </p>
             <div className="flex gap-6">
-              <Link href="/legal/privacy" className="text-sm opacity-50 hover:opacity-100 transition-opacity">
+              <Link href="/contact" className="text-sm opacity-50 hover:opacity-100 transition-opacity">
                 Privacy Policy
               </Link>
-              <Link href="/legal/terms" className="text-sm opacity-50 hover:opacity-100 transition-opacity">
+              <Link href="/contact" className="text-sm opacity-50 hover:opacity-100 transition-opacity">
                 Terms of Service
               </Link>
             </div>

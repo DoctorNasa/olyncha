@@ -43,7 +43,7 @@
   "promoBanner": {
     "enabled": true,
     "text": "BUY 1 GET 1 • Today Only",
-    "link": "/order",
+    "link": "/menu",
     "backgroundColor": "#C8102E",
     "textColor": "#FFFFFF"
   },

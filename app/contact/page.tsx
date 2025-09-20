@@ -227,9 +227,6 @@ export default function ContactPage() {
               <div className="mt-12">
                 <h3 className="text-[#121b0e] text-lg font-semibold mb-4">Quick Links</h3>
                 <div className="space-y-2">
-                  <a href="/faq" className="block text-[#67974e] hover:text-[#4bb814] transition-colors">
-                    Frequently Asked Questions
-                  </a>
                   <a href="/menu" className="block text-[#67974e] hover:text-[#4bb814] transition-colors">
                     View Our Menu
                   </a>
@@ -241,6 +238,68 @@ export default function ContactPage() {
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* FAQ Section */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <h2 className="text-[#121b0e] text-3xl md:text-4xl font-bold leading-tight mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-[#121b0e] text-lg leading-relaxed max-w-2xl mx-auto">
+                Find answers to common questions about our matcha, orders, and services.
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto space-y-6">
+              {[
+                {
+                  question: "What makes your matcha special?",
+                  answer: "Our matcha is sourced directly from premium farms in Uji, Kyoto - the birthplace of Japanese tea ceremony. We use only ceremonial-grade matcha that's stone-ground and shade-grown for the perfect balance of umami and sweetness."
+                },
+                {
+                  question: "Do you offer dairy-free and vegan options?",
+                  answer: "Yes! We offer a variety of plant-based milk alternatives including oat milk, almond milk, and coconut milk. Many of our matcha drinks can be made completely vegan upon request."
+                },
+                {
+                  question: "Can I order online for pickup or delivery?",
+                  answer: "Absolutely! You can place orders through our website for both pickup and delivery. Delivery is available within a 5-mile radius of our location, and pickup orders are typically ready within 15-20 minutes."
+                },
+                {
+                  question: "Do you cater events or offer wholesale?",
+                  answer: "Yes, we provide catering services for events and offer wholesale opportunities for businesses. Please contact us directly to discuss your specific needs and we'll create a custom package for you."
+                },
+                {
+                  question: "What are your hours and location?",
+                  answer: "We're open Monday through Sunday from 9:00 AM to 6:00 PM. You can find us at 123 Main Street in Rochester, NH. We're located in the heart of downtown with plenty of parking available."
+                },
+                {
+                  question: "Do you have a loyalty program?",
+                  answer: "Yes! Our Matcha Lovers loyalty program rewards frequent customers with points for every purchase. Earn points to redeem for free drinks, exclusive merchandise, and special member-only events."
+                }
+              ].map((faq, index) => (
+                <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                  <h3 className="text-[#121b0e] text-lg font-semibold mb-3">
+                    {faq.question}
+                  </h3>
+                  <p className="text-[#121b0e] leading-relaxed">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-[#121b0e] text-lg mb-4">
+                Still have questions?
+              </p>
+              <p className="text-[#67974e]">
+                Feel free to reach out using the contact form above or give us a call at{' '}
+                <a href="tel:+16035550123" className="text-[#4bb814] hover:text-[#3a9610] transition-colors font-medium">
+                  (603) 555-0123
+                </a>
+              </p>
             </div>
           </div>
         </div>

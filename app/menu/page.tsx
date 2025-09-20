@@ -66,10 +66,10 @@ export default function MenuPage() {
           </p>
           <div className="flex gap-4 justify-center">
             <a
-              href="/order"
+              href="/cart"
               className="px-8 py-3 rounded-full bg-white text-matcha-600 font-medium hover:opacity-90 transition-opacity"
             >
-              Order Online
+              View Cart
             </a>
             <a
               href="/locations"

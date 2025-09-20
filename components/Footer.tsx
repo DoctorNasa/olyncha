@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
               <Link href="/menu" className="text-sm hover:opacity-80 transition-opacity">Menu</Link>
               <Link href="/about" className="text-sm hover:opacity-80 transition-opacity">Our Story</Link>
               <Link href="/locations" className="text-sm hover:opacity-80 transition-opacity">Find Us</Link>
-              <Link href="/order" className="text-sm hover:opacity-80 transition-opacity">Order Online</Link>
+              <Link href="/contact" className="text-sm hover:opacity-80 transition-opacity">Contact</Link>
             </nav>
           </div>
 
@@ -101,8 +101,8 @@ const Footer: React.FC = () => {
 
             <div className="flex flex-col md:flex-row items-center gap-4 text-sm">
               <div className="flex gap-4">
-                <Link href="/legal/privacy" className="hover:opacity-80 transition-opacity">Privacy</Link>
-                <Link href="/legal/terms" className="hover:opacity-80 transition-opacity">Terms</Link>
+                <Link href="/contact" className="hover:opacity-80 transition-opacity">Privacy</Link>
+                <Link href="/contact" className="hover:opacity-80 transition-opacity">Terms</Link>
               </div>
               <p className="opacity-60">© {currentYear} The Olyn Cha. All rights reserved.</p>
             </div>

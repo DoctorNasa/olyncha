@@ -2,6 +2,71 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+  imageUrl: string;
+  pronouns?: string;
+}
+
+const TEAM_MEMBERS: TeamMember[] = [
+  {
+    name: 'Sarah Chen',
+    role: 'Founder & CEO',
+    bio: 'Passionate about bringing authentic matcha culture to the West',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCsVtLwg99okJ-O4GgBkCkarmaEXAlmouiCldrOFFCdN7CMnfY2GvQtERJioX4SwZ92G0ROabt3W3D7x3nVRFp7N2iocyMzPaMLv_4kR5P37FllTaURFAQ9uCbbbmi33-gZXe_QKpIGiwxcEeRHlJ8dC0rdJX0BTDld18en3o1K2ZepUWG-B6ttJfLY-GzpTx90u-1IWkQIdPcicgtCBiTo75JMDrpjWugsYbTR-QTUC-2pGZKaSm_5wUUaupcs0-XQQYvJn76sZx0'
+  },
+  {
+    name: 'David Lee',
+    role: 'Head Barista',
+    bio: 'Master of matcha preparation with 10+ years of experience',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuAR3e3laE3AvDHetyK0jFYzRMiEwtHvkUxOfPU99GiSVZwjCigMXaZxDClwQDEaGnpsPK9VRH3yOncDxDluVz-ntbrYfmYUID9XRTFMa4XOnlE99mLgoz0oetiNg0wujXX1DmG5qWqu2L5MjyCZefwNLUl4rvDOYH94g09-zmqqCy4vM2wjCb23Cd5R86X_fzwWrtRxpCBh_Fp-dlk_jiUsUj1HDa-bLiaXYSyQrpoR0taLQ1ixCjZ-NRf9H8b9Rywjin10MhKhJ-8'
+  },
+  {
+    name: 'Emily Wong',
+    role: 'Marketing Manager',
+    bio: 'Spreading the love for matcha through creative storytelling',
+    imageUrl:
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBVpyX0AaKLjd0hvQ9y5csEKmTk-AGYAVnE9BANJh-pwA3YTl15rkH6MbZLTc9VIOzwtIj1a5i60YYg2wHvmcmG1htIDQYCy9foUA85DTRWi2MbOekdgPMS9xwS9XCVRysSWOh3yh6Sirep8zCijOnNiRlkfGrk-YvVcWBj1l8lw64I8t99rcSSKujU92-Nou9NZKoX4C5byKaHQW4XixXgn7TLOOAIXGPSdvLOrlLqTSfBNuvvUMfrZPZLQ0qRQliudfI0Dx0_8UY'
+  }
+];
+
+interface TeamMemberCardProps {
+  member: TeamMember;
+}
+
+function TeamMemberCard({ member }: TeamMemberCardProps) {
+  return (
+    <article className="text-center group">
+      <div className="relative mb-6">
+        <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
+          <div
+            className="w-full h-full bg-center bg-cover transform group-hover:scale-105 transition-transform duration-300"
+            style={{ backgroundImage: `url('${member.imageUrl}')` }}
+            role="img"
+            aria-label={`${member.name}, ${member.role}`}
+          ></div>
+        </div>
+      </div>
+      <h3 className="text-[#121b0e] text-xl font-bold mb-2">
+        {member.name}
+        {member.pronouns && (
+          <span className="block text-sm font-medium text-[#4bb814] mt-1">{member.pronouns}</span>
+        )}
+      </h3>
+      <p className="text-[#4bb814] font-semibold mb-3">
+        {member.role}
+      </p>
+      <p className="text-[#121b0e] text-sm leading-relaxed">
+        {member.bio}
+      </p>
+    </article>
+  );
+}
+
 export const metadata: Metadata = {
   title: 'About Us | The Olyn Cha - Premium Matcha Tea',
   description: 'Learn about our journey, mission, and commitment to bringing the finest matcha experience to your everyday life.',
@@ -89,74 +154,9 @@ export default function AboutPage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-            {/* Team Member 1 */}
-            <div className="text-center group">
-              <div className="relative mb-6">
-                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                  <div
-                    className="w-full h-full bg-center bg-cover transform group-hover:scale-105 transition-transform duration-300"
-                    style={{
-                      backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuCsVtLwg99okJ-O4GgBkCkarmaEXAlmouiCldrOFFCdN7CMnfY2GvQtERJioX4SwZ92G0ROabt3W3D7x3nVRFp7N2iocyMzPaMLv_4kR5P37FllTaURFAQ9uCbbbmi33-gZXe_QKpIGiwxcEeRHlJ8dC0rdJX0BTDld18en3o1K2ZepUWG-B6ttJfLY-GzpTx90u-1IWkQIdPcicgtCBiTo75JMDrpjWugsYbTR-QTUC-2pGZKaSm_5wUUaupcs0-XQQYvJn76sZx0")`
-                    }}
-                  ></div>
-                </div>
-              </div>
-              <h3 className="text-[#121b0e] text-xl font-bold mb-2">
-                Sarah Chen
-              </h3>
-              <p className="text-[#4bb814] font-semibold mb-3">
-                Founder & CEO
-              </p>
-              <p className="text-[#121b0e] text-sm leading-relaxed">
-                Passionate about bringing authentic matcha culture to the West
-              </p>
-            </div>
-
-            {/* Team Member 2 */}
-            <div className="text-center group">
-              <div className="relative mb-6">
-                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                  <div
-                    className="w-full h-full bg-center bg-cover transform group-hover:scale-105 transition-transform duration-300"
-                    style={{
-                      backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuAR3e3laE3AvDHetyK0jFYzRMiEwtHvkUxOfPU99GiSVZwjCigMXaZxDClwQDEaGnpsPK9VRH3yOncDxDluVz-ntbrYfmYUID9XRTFMa4XOnlE99mLgoz0oetiNg0wujXX1DmG5qWqu2L5MjyCZefwNLUl4rvDOYH94g09-zmqqCy4vM2wjCb23Cd5R86X_fzwWrtRxpCBh_Fp-dlk_jiUsUj1HDa-bLiaXYSyQrpoR0taLQ1ixCjZ-NRf9H8b9Rywjin10MhKhJ-8")`
-                    }}
-                  ></div>
-                </div>
-              </div>
-              <h3 className="text-[#121b0e] text-xl font-bold mb-2">
-                David Lee
-              </h3>
-              <p className="text-[#4bb814] font-semibold mb-3">
-                Head Barista
-              </p>
-              <p className="text-[#121b0e] text-sm leading-relaxed">
-                Master of matcha preparation with 10+ years of experience
-              </p>
-            </div>
-
-            {/* Team Member 3 */}
-            <div className="text-center group">
-              <div className="relative mb-6">
-                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
-                  <div
-                    className="w-full h-full bg-center bg-cover transform group-hover:scale-105 transition-transform duration-300"
-                    style={{
-                      backgroundImage: `url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVpyX0AaKLjd0hvQ9y5csEKmTk-AGYAVnE9BANJh-pwA3YTl15rkH6MbZLTc9VIOzwtIj1a5i60YYg2wHvmcmG1htIDQYCy9foUA85DTRWi2MbOekdgPMS9xwS9XCVRysSWOh3yh6Sirep8zCijOnNiRlkfGrk-YvVcWBj1l8lw64I8t99rcSSKujU92-Nou9NZKoX4C5byKaHQW4XixXgn7TLOOAIXGPSdvLOrlLqTSfBNuvvUMfrZPZLQ0qRQliudfI0Dx0_8UY")`
-                    }}
-                  ></div>
-                </div>
-              </div>
-              <h3 className="text-[#121b0e] text-xl font-bold mb-2">
-                Emily Wong
-              </h3>
-              <p className="text-[#4bb814] font-semibold mb-3">
-                Marketing Manager
-              </p>
-              <p className="text-[#121b0e] text-sm leading-relaxed">
-                Spreading the love for matcha through creative storytelling
-              </p>
-            </div>
+            {TEAM_MEMBERS.map((member) => (
+              <TeamMemberCard key={member.name} member={member} />
+            ))}
           </div>
         </div>
       </section>

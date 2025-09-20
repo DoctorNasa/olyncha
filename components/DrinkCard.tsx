@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { MenuItem } from '@/types';
 import { PlusIcon, HeartIcon } from '@heroicons/react/24/outline';
